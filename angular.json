@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": ["C:/Angular/haber/node_modules/jquery/dist/jquery.min.js",
+              "C:/Angular/haber/node_modules/bootstrap/dist/js/bootstrap.js,",
+              "C:/Users/E.Mustafa YILDIRIM/Desktop/haber/node_modules/alertifyjs/build/alertify.min.js"
+           ]
           },
           "configurations": {
             "production": {
@@ -90,7 +94,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["C:/Angular/haber/node_modules/jquery/dist/jquery.min.js",
+            "C:/Angular/haber/node_modules/bootstrap/dist/css/bootstrap.min.css"]
           }
         },
         "lint": {
@@ -119,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Haber"
+    }
+  },
+  "defaultProject": "Haber",
+  "cli": {
+    "analytics": "c4483043-87a9-4956-9cc1-6cd2c4f4a4cf"
+  }
 }

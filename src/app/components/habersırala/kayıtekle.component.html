@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-secondary">
+  <div class="container-fluid ">
+    <a class="navbar-brand text-white" href="/">BASARIYA ODAKLAN </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+
+        <li class="nav-item">
+          <a class="nav-link  btn btn-light text-dark" aria-current="page" href="/">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-dark text-white" href="kayitlar">Haber Ekle</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-info text-white" href="kayıtsırala">Haber SIRALA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-success text-white" href="uyesil">Üye Sil</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link btn btn-warning text-white" (click)="OturumuKapat()">ÇIKIŞ</a>
+        </li>
+       
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h4>HABERLER</h4>
+      <input type="text" class="form-control w-50" placeholder="Aranacak Değer Giriniz"
+        (keyup)="Ara($event.target.value)">
+      <table class="table table-hover mt-2">
+      
+        <div class="container mt-5">
+
+          <div class="row">
+           <div class="col-md-8">
+             <h4>Kayıtlı Haberler</h4>
+             <table class="table">
+               <thead>
+                 <th>Haber Adı </th>
+                 <th>Haber Konusu</th>
+                 <th>Yazar  </th>
+                 <th>Fotoğraf linki</th>
+                 <th>Haber eklenme  Tarihi </th>
+                 <th>Güncelleme  Tarihi </th>
+               </thead>
+               <tbody>
+                 <tr *ngFor="let  Haber of Haberler">
+                 <td>{{Haber.haberadi}}</td>
+                 <td>{{ Haber.haberkonu}}</td>
+                 <td>{{ Haber.yazar}}</td>
+                 <td>{{ Haber.img}}</td>
+                 <td>{{ Haber.kayTarihi | date:'dd.MM.yyyy '}}</td>
+                 <td>{{ Haber.duzTarihi | date:'dd.MM.yyyy HH:mm:ss '}}</td>
+                </tr>
+               </tbody>
+               </table>
+              <hr>
+           </div>
+          </div>
+        </div>
+      </table>
+      <input type="number" (keyup)="LimitBelirle($event.target.value)" [value]="limit" class="form-control w-25 mb-2">
+      <button class="btn btn-outline-primary" (click)="OncekiSayfa()" [disabled]="sayfa<2">Önceki Sayfa</button>
+      <button class="btn btn-outline-primary ml-2" (click)="SonrakiSayfa()" [disabled]="kayitlar?.length==0">Sonraki
+        Sayfa</button>
+    </div>
+  </div>
+</div>

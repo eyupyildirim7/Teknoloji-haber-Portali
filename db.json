@@ -1,0 +1,270 @@
+{
+  "grup": [
+    {
+      "id": 1,
+      "adi": "Yazılım"
+    },
+    {
+      "id": 2,
+      "adi": "Grafik"
+    },
+    {
+      "id": 3,
+      "adi": "Donanım"
+    }
+  ],
+  "ders": [
+    {
+      "id": 1,
+      "dersadi": "Nesne Tabanlı Prog.",
+      "kredi": 4,
+      "grupId": 1
+    },
+    {
+      "id": 2,
+      "grupId": "2",
+      "dersadi": "Multi Medya",
+      "kredi": 3
+    },
+    {
+      "id": 3,
+      "dersadi": "Anakart teknolojisi",
+      "kredi": 3,
+      "grupId": 3
+    },
+    {
+      "id": 5,
+      "grupId": "1",
+      "dersadi": "Web Yazılım",
+      "kredi": 3
+    },
+    {
+      "id": 6,
+      "grupId": "2",
+      "dersadi": "animasyon",
+      "kredi": 2
+    },
+    {
+      "id": 7,
+      "grupId": "1",
+      "dersadi": "Yazıma Giriş",
+      "kredi": 2
+    },
+    {
+      "id": 8,
+      "dersadi": "fizik",
+      "kredi": 2
+    },
+    {
+      "id": 9,
+      "dersadi": "fizik",
+      "kredi": 2
+    },
+    {
+      "id": 10,
+      "dersadi": "fizik",
+      "kredi": 2
+    },
+    {
+      "id": 11,
+      "dersadi": "kimya",
+      "kredi": 2
+    },
+    {
+      "id": 12,
+      "grupId": "1",
+      "dersadi": "fizik",
+      "kredi": 1
+    },
+    {
+      "id": 13,
+      "grupId": "3",
+      "dersadi": "kimya",
+      "kredi": 2
+    },
+    {
+      "id": 14,
+      "grupId": "3",
+      "dersadi": "kimya",
+      "kredi": 2
+    },
+    {
+      "id": 15,
+      "grupId": "3",
+      "dersadi": "kimya",
+      "kredi": 2
+    },
+    {
+      "id": 16,
+      "grupId": "3",
+      "dersadi": "kimya",
+      "kredi": 2
+    },
+    {
+      "id": 17,
+      "grupId": "1",
+      "dersadi": "kimya",
+      "kredi": 2
+    },
+    {
+      "id": 18,
+      "grupId": "2",
+      "dersadi": "fizik",
+      "kredi": 5
+    },
+    {
+      "id": 19,
+      "grupId": "1",
+      "dersadi": "fizik",
+      "kredi": 5
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    }
+  ],
+  "Uye": [
+    {
+      "id": 1,
+      "adsoyad": "Eyüp YILDIRIM",
+      "kadi": "yldrm",
+      "mail": "eyupyldrm07@gmail.com",
+      "admin": 1,
+      "parola": "123"
+    },
+    {
+      "id": 2,
+      "adsoyad": "Mustafa YILDIRIM",
+      "kadi": "eyup",
+      "mail": "yldrm@gmail.com",
+      "admin": 0,
+      "parola": "123"
+    }
+  ],
+  "Kategori": [
+    {
+      "katId": 1,
+      "katAdi": "mobil"
+    }
+  ],
+  "kayit": [
+    {
+      "id": "19",
+      "adsoyad": "Erden Bayar çelebi",
+      "mail": "ut@sagittis.ng",
+      "yas": "38"
+    },
+    {
+      "id": "20",
+      "adsoyad": "Oran Kibar",
+      "mail": "aliquet@fringilla.rs",
+      "yas": "39"
+    },
+    {
+      "id": "21",
+      "adsoyad": "Turatekin Kınacı",
+      "mail": "massa@bibendum.vc",
+      "yas": "20"
+    },
+    {
+      "id": "22",
+      "adsoyad": "Mükremin Tanrıvermiş",
+      "mail": "laoreet@ac.ng",
+      "yas": "31"
+    },
+    {
+      "id": "23",
+      "adsoyad": "Milena Erkon",
+      "mail": "scelerisque@id.am",
+      "yas": "36"
+    },
+    {
+      "id": "24",
+      "adsoyad": "Suka Ulaş",
+      "mail": "ac@feugiat.sz",
+      "yas": "25"
+    },
+    {
+      "id": "25",
+      "adsoyad": "Tunçöven Meteroğlu",
+      "mail": "massa@et.ee",
+      "yas": "29"
+    },
+    {
+      "id": "26",
+      "adsoyad": "Duranay Kutludoğmuş",
+      "mail": "euismod@venenatis.st",
+      "yas": "27"
+    },
+    {
+      "id": "27",
+      "adsoyad": "Ayza Bozanoğlu",
+      "mail": "eros@id.cc",
+      "yas": "20"
+    },
+    {
+      "id": "28",
+      "adsoyad": "Oflaz Özbaysar",
+      "mail": "et@venenatis.mt",
+      "yas": "34"
+    },
+    {
+      "id": "29",
+      "adsoyad": "Ese Koşar",
+      "mail": "leo@nunc.fo",
+      "yas": "32"
+    },
+    {
+      "id": "30",
+      "adsoyad": "Başöz Önsül",
+      "mail": "sed@Cras.jobs",
+      "yas": "38"
+    },
+    {
+      "id": "31",
+      "adsoyad": "Aysu Birinci",
+      "mail": "hendrerit@elit.to",
+      "yas": "33"
+    },
+    {
+      "id": 468,
+      "adsoyad": "Eyüp Mustafa",
+      "mail": "eyupyldrm07@gmail.com",
+      "yas": 30
+    },
+    {
+      "id": 856,
+      "adsoyad": "gürkan",
+      "mail": "altan@mail.com",
+      "yas": 31
+    }
+  ],
+  "kaynak": [
+    {
+      "id": 252,
+      "haberadi": "Dikkat çeken kamera tasarımıyla Realme GT2 Pro geliyor",
+      "haberkonu": "Huawei’nin 2019 yılında ABD güvenliğini tehdit ettiği gerekçesiyle kara listeye alınması ve yaptırımlar nedeniyle; sektördeki ağırlığını kaybetmesinin ardından sahneye çıkan şirketlerden biri de Realme oldu. 2018 yılında OPPO’nun alt markası olarak faaliyetlerine başlayan şirket; günümüz itibariyle özellikle Çin pazarında ciddi bir kitleye sahip.  Realme, Qualcomm Snapdragon Dijital Teknoloji Zirvesi 2021’de; Snapdragon 8 Gen 1 Mobil Platformu ile çalışan bir akıllı telefon piyasaya süren ilk üreticilerden biri olacağını duyurdu. Böylece şirketin yeni amiral gemisi, realme GT serisindeki ilk Pro ürün olarak Realme GT 2 Pro; adıyla piyasaya sürülecek ve firmanın en üst düzey amiral gemisi konumunda olacak.",
+      "imageUrl": "https://i0.wp.com/shiftdelete.net/wp-content/uploads/2021/11/dikkat-ceken-kamera-tasarimiyla-realme-gt2-pro-geliyor.jpg?w=1280&ssl=1"
+    }
+  ]
+}

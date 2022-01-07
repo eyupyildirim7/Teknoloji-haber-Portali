@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-secondary">
+  <div class="container-fluid ">
+    <a class="navbar-brand text-white" href="/">BASARIYA ODAKLAN </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+
+        <li class="nav-item">
+          <a class="nav-link  btn btn-light text-dark" aria-current="page" href="/">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-dark text-white" href="kayitlar">Haber Ekle</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-info text-white" href="kayıtsırala">Haber SIRALA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-success text-white" href="uyesil">Üye Sil</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link btn btn-warning text-white" (click)="OturumuKapat()">ÇIKIŞ</a>
+        </li>
+       
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+
+  <div class="row">
+   <div class="col-md-8">
+     <h4>Kayıtlar</h4>
+     <table class="table">
+       <thead>
+         <th>Haber Adı </th>
+         <th>Haber Konusu</th>
+         <th>Yazar  </th>
+         <th>fotograf linki  </th>
+         <th>Kayıt Tarihi </th>
+         <th>Güncelleme  Tarihi </th>
+         <th>Düzenle</th>
+         <th>Sil</th>
+       </thead>
+       <tbody>
+         <tr *ngFor="let  Haber of Haberler">
+         <td>{{Haber.haberadi}}</td>
+         <td>{{ Haber.haberkonu}}</td>
+         <td>{{ Haber.yazar}}</td>
+         <td>{{ Haber.img}}</td>
+         <td>{{ Haber.kayTarihi | date:'dd.MM.yyyy '}}</td>
+         <td>{{ Haber.duzTarihi | date:'dd.MM.yyyy HH:mm:ss '}}</td>
+         <td><button class="btn btn-outline-warning" (click)="HaberDuzenle(Haber)">Düzenle</button></td>
+         <td><button class="btn btn-outline-warning" (click)="HaberSil(Haber)" >Sil</button></td>
+        </tr>
+       </tbody>
+       </table>
+      <hr>
+   </div>
+  <div class="col-md-4">
+    <h4>Kayıt Ekle Düzenle</h4>
+    <hr>
+    <form #frm="ngForm" (submit)="kaydet()">
+
+      <div class="form-group">
+        <label>Haber Adı</label>
+      <input type="text" class="form-control" name="adsoyad" [(ngModel)]="secHaber.haberadi" required>
+      <input type="hidden" class="form-control" name="key" [(ngModel)]="secHaber.key" >
+      </div>
+
+      <div class="form-group">
+        <label>Haber Konusu</label>
+       <input type="text" class="form-control" name="mail" [(ngModel)]="secHaber.haberkonu" required>
+      </div> 
+
+      <div class="form-group">
+        <label>Yazar</label>
+       <input type="text" class="form-control" name="tel" [(ngModel)]="secHaber.yazar" required>
+      </div>
+
+      <div class="form-group">
+        <label>Fotoğraf Linki</label>
+       <textarea type="text" class="form-control" name="adres" [(ngModel)]="secHaber.img" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Kaydet" class="btn btn-outline-success" [disabled]="frm.invalid">
+        </div>
+    </form>
+    <button class="btn btn-outline-danger "(click)="Vazgec();">VAZGEÇ</button>
+    <div [ngClass]="sonuc.islem ?'alert alert-success': 'alert alert-danger'" *ngIf="sonuc.mesaj?.length>0" >{{sonuc.mesaj}}</div>
+   </div>
+  </div>
+</div>
+<br>

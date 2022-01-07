@@ -1,0 +1,147 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-secondary">
+  <div class="container-fluid ">
+    <a class="navbar-brand text-white" href="/">BASARIYA ODAKLAN </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+
+        <li class="nav-item">
+          <a class="nav-link  btn btn-light text-dark" aria-current="page" href="/">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-dark text-white" href="yazilim">YAZILIM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-info text-white" href="blokchain">BLOKCHAİN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-success text-white" href="mobil">MOBİL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary text-white" href="oyun">OYUN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-danger text-white" href="sosyalmedya">SOSYAL MEDYA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-warning text-white" href="giris">GİRİŞ</a>
+        </li>
+       
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row " >
+    <h1 class="text-center mt-5  " *ngIf="products; else noProduct">{{title}} </h1> 
+    <ng-template #noProduct><div class="alert alert-primary" role="alert">
+      Bu kategroride Ürün yoktur.
+    </div>
+     
+    </ng-template>
+    <div *ngFor="let product of products" class="card mt-5" style="width: 27rem;">
+      <img class="card-img-top" [src]="product. imageUrl" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <a (click)="addTocard(product)" class="btn btn-primary">HABERİ BEĞEN</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="py-2 footerbody" style="background-color: #222;">
+    <div class="container text-white mt-4">
+        <div class="row">
+            <div class="col-4 col-md-3">
+                <h3><b><a class="kısa" href="/">BAŞARİYA ODAKLAN</a></b></h3>
+                <div class="col-md-6 popup-container">
+                    <label class="button" for="login-popup">Bize Ulaşın</label>
+                    <input class="input1" type="checkbox" id="login-popup">
+                    <div class="popup">
+                        <label for="login-popup"></label>
+                        <div class="inner">
+                            <div class="title">
+                                <h6 class="mt-2">İLETİŞİM FORMU</h6>
+                            </div>
+                            <div class="content">
+                                <label for="name"></label>
+                                <input class="input1" type="text" name="name" required="" placeholder="Ad-Soyad" autocomplete="nickname">
+                                <label for="mail"></label>
+                                <input class="input1" type="email" name="mail" required="" placeholder="E-mail" autocomplete="email">
+                                <label for="text"></label>
+                                <textarea name="" id="" cols="30" rows="1" required="" placeholder="KONU" autocomplete="false"></textarea>
+                                <label class="input1" for="text"></label>
+                                <textarea class="textarea1" name="" id="" cols="30" rows="10" required="" placeholder="AÇIKLAMANIZ"></textarea>
+                                <button class="button1" type="submit">GÖNDER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 popup-container1 ">
+                    <label class="button2" for="login-popup1">İletişim</label>
+                    <input class="input1"type="checkbox" id="login-popup1">
+                    <div class="popup1">
+                        <label for="login-popup1"></label>
+                        <div class="inner1">
+                            <div class="title1">
+                                <h6 class="mt-2">İLETİŞİM</h6>
+                            </div>
+                            <div class="content1">
+                                <table class="tablo mt-4">
+                                    <tr>
+                                        <td class="col-md-6 baslık">Müşteri Hizmetleri</td>
+                                        <th class="col-md-6 alt">0212 999 99 99 <br>0850 999 99 99</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-6 baslık">E-Mail</td>
+                                        <th class="col-md-6 alt">basariyaodaklan@gmail.com</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-6 baslık">Teknik Destek</td>
+                                        <th class="col-md-6 alt">0535 999 99 99 <br>0850 999 99 99 </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-6 baslık">Destek Sistemi</td>
+                                        <th class="col-md-6 alt">destek@marka.com</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-6 baslık">Faks</td>
+                                        <th class="col-md-6 alt">0212 999 99 99</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-6 baslık">Adres</td>
+                                        <th class="col-md-6 alt">Pınarbaşı, Hürriyet Cd., 07070 Konyaaltı/Antalya</th>
+                                    </tr>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-md-3">
+                <a href="https://www.instagram.com/basariyaodaklan/" target="_blank">
+                    <img src="assets\icon\Instagram.png" alt="" class="img-fluid">
+                </a>
+                <a href="https://twitter.com/Basariyaodaklan" target="_blank">
+                    <img src="assets\icon\twitter.png" alt="" class="img-fluid">
+                </a>
+                <a href="https://www.youtube.com/channel/UCY4aMgOLmfN-HvQJEeXkltA" target="_blank">
+                    <img src="assets\icon\youtube.png" alt="" class="img-fluid">
+                </a>
+            </div>
+            <div class="clearfix"></div>
+            <p class="text-center"><small>&#169; TÜM HAKLARI SAKLIDIR</small></p>
+        </div>
+    </div>
+  </footer>
