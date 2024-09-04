@@ -28,6 +28,9 @@ This project is a web application that allows users to browse, read, and manage 
 - **HTML & CSS**: For the structure and styling of the application.
 - **TypeScript**: For enhanced JavaScript features and Angular development.
 
+## Project Introduction Video
+Watch the project introduction video on YouTube: [Technology News Portal Introduction](https://youtu.be/JhnIyn1vXYU)
+
 ## Project View
 
 Here are some screenshots of the project:
@@ -41,5 +44,10 @@ Here are some screenshots of the project:
 ![image](https://github.com/user-attachments/assets/e45fe1ac-b052-4eb6-8df3-2ab37e11ee6a)
 ![image](https://github.com/user-attachments/assets/f087d443-2aaa-4dd9-a769-a789e344729e)
 ![image](https://github.com/user-attachments/assets/7518cc58-a3e2-4288-9e5b-46f0bfb3010f)
+
+
+
+
+
 
 
