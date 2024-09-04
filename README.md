@@ -1,6 +1,37 @@
-# Haber
+# Teknolojı Haber Portalı
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
+## Overview
+
+This project is a web application that allows users to browse, read, and manage news articles. The application is built with Angular for the frontend and Firebase for the backend, providing real-time updates and user authentication.
+
+## Requirements
+
+- Angular 9.1.15
+- Firebase
+- HTML
+- CSS
+- TypeScript
+
+## Features
+
+1. **Create Article**: Users can create a new article by navigating to the "Create" page and filling out the form.
+2. **Edit Article**: Users can edit an existing article by navigating to the article and clicking the "Edit" button.
+3. **Delete Article**: Users can delete an article by clicking the "Delete" button on the article page.
+4. **View Articles**: Users can view all articles by navigating to the homepage.
+5. **User Authentication**: Firebase Authentication is used to manage user sign-up and login.
+6. **Real-Time Database**: Firebase Firestore is used for storing and retrieving news articles in real-time.
+
+## Used Technologies
+
+- **Angular**: Frontend framework for building the user interface.
+- **Firebase**: Backend service for authentication, real-time database, and hosting.
+- **HTML & CSS**: For the structure and styling of the application.
+- **TypeScript**: For enhanced JavaScript features and Angular development.
+
+## Project View
+
+Here are some screenshots of the project:
+
 ![image](https://github.com/user-attachments/assets/50ee1aa0-806d-46ea-a741-45e4de949ff1)
 ![image](https://github.com/user-attachments/assets/05fb0cf6-6857-47c3-a528-1e647c79071a)
 ![image](https://github.com/user-attachments/assets/c5d258cc-15ab-4f4d-8f8b-937ba4d6fea0)
@@ -12,35 +43,3 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![image](https://github.com/user-attachments/assets/7518cc58-a3e2-4288-9e5b-46f0bfb3010f)
 
 
-
-
-
-
-
-
-
-
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
